@@ -149,8 +149,13 @@ void loop()
   
   BTSerial.println("--------------------");
   BTSerial.print("  GSR Value: ");
+
+  if(count >= 10)
+  {
+  
   BTSerial.println(stressValue);
   BTSerial.println("--------------------");
+  }
   
   delay(2000);
 }
